@@ -1,7 +1,7 @@
 Square One
 ==========
 
-My personal framework using Bourbon and HTML5 Boilerplate.
+My personal framework/workflow using Bourbon, HTML5 Boilerplate and Grunt.
 
 Updates imminent:
 
