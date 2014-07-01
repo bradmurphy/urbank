@@ -37,7 +37,7 @@ module.exports = function(grunt) {
             expand: true,
             cwd: 'assets/img/',
             src: ['**/*.{png,jpg,gif}'],
-            dest: 'assets/img/build'
+            dest: 'assets/img'
           }]
         }
       },
@@ -80,6 +80,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-imagemin');
 
   grunt.registerTask('build', ['concat', 'uglify', 'sass', 'imagemin']);
-  grunt.registerTask('dev', ['watch']);
+  grunt.registerTask('dev', ['watch', 'concat']);
 
 }
