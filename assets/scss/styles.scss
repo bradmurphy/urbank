@@ -1,12 +1,16 @@
+// IMPORT NORMALIZE
+
+@import "normalize";
+
+// IMPORT VARIABLES
+
+@import "variables";
+
 // IMPORT BOURBON
 
 @import "bourbon/bourbon";
 @import "bitters/base";
 @import "neat/neat";
-
-// IMPORT VARIABLES
-
-@import "variables";
 
 // TABLE OF CONTENTS
 
@@ -25,6 +29,7 @@ body, html {
 	background: $cream;
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
 }
 
 .page-wrap {
