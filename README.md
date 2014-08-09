@@ -9,3 +9,4 @@ Updates imminent:
 * 06/26/14: Configured Gruntfile.js for workflow including concat, image minify, uglify, sass, watch (with livereload).
 * 06/27/14: Added HTML watch task for live reload and package.json with dependencies for grunt.
 * 07/05/14: Added js-hint and put normalize.css in SASS assets.
+* 08/09/14: Put normalize.css on splash page, renamed page-wrap to content-wrap.
