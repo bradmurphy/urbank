@@ -1,5 +1,4 @@
 // MEDIA QUERY MIXIN
-
 @mixin mq($point) {
 	@if $point == desktop {
 		@media (min-width: 1280px) { @content; }
@@ -19,7 +18,6 @@
 }
 
 // COlORS
-
 $muteAqua: #1abc9c;
 $aqua: #16a085;
 $muteGreen: #2ecc71;
