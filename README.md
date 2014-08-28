@@ -11,6 +11,7 @@ Updates:
 * 07/05/14: Added js-hint and put normalize.css in SASS assets.
 * 08/09/14: Put normalize.css on splash page, renamed page-wrap to content-wrap.
 * 08/19/14: Updated documentation on splash page, added TweenMax, jQuery Waypoints and animate.css to the framework.
+* 08/27/14: Configured protected main.js template and added _typography.scss.
 
 Install Instructions:
 

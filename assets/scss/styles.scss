@@ -31,9 +31,8 @@ body, html {
 .content-wrap {
 	width: 100%;
 	height: auto;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 0 15px;
+	@include margin(0 auto);
+	@include pad(0 15px);
 	@include row();
 	@include outer-container;
 	overflow-x: hidden;
@@ -55,29 +54,7 @@ body, html {
 }
 
 // IMPORTED STYLES
-
-// TYPOGRAPHY
-.squareone {
-	color: $muteGreen;
-	line-height: 1.5em;
-	padding: 10px 0;
-}
-
-.categories {
-	color: $muteBlue;
-	text-transform: uppercase;
-	line-height: 1.5em;
-	padding: 10px 0;
-}
-
-a {
-	color: $carrot;
-	@include transition(all .3s ease-in-out);
-	&:hover {
-		color: $pumpkin;
-		text-decoration: underline;
-	}
-}
+@import "typography";
 
 // FLASHES
 .success {
