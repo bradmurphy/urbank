@@ -1,22 +1,74 @@
-// TYPOGRAPHY
-.squareone {
-	color: $muteGreen;
-	line-height: 1.5em;
-	padding: 10px 0;
-}
-
-.categories {
-	color: $muteBlue;
-	text-transform: uppercase;
-	line-height: 1.5em;
-	padding: 10px 0;
-}
-
-a {
-	color: $carrot;
-	@include transition(all .3s ease-in-out);
-	&:hover {
-		color: $pumpkin;
-		text-decoration: underline;
+h1 {
+	font-size: 1.75em;
+	color: $purple;
+	text-transform: capitalize;
+	font-weight: 400;
+	@include mq(laptop) {
+		font-size: 2.5em;
 	}
+}
+
+h2 {
+	float: left;
+	width: 100%;
+	font-size: 1.75em;
+	color: $black;
+	font-weight: 400;
+	span {
+		font-weight: 300;
+	}
+	@include mq(laptop) {
+		font-size: 2.25em;
+	}
+}
+
+h3 {
+	font-size: 1.05em;
+	text-transform: capitalize;
+}
+
+h4 {
+	color: $purple;
+	text-transform: capitalize;
+	text-align: center;
+	line-height: 0.5em;
+	padding: 0 0;
+	@include mq(laptop) {
+		margin-top: -60px;
+		text-align: left;
+	}
+}
+
+h5 {
+	margin-top: 30px;
+	font-size: 1.25em;
+	line-height: 1px;
+	font-weight: 300;
+	text-transform: capitalize;
+	@include mq(android) {
+		font-size: 1.75em;
+	}
+	@include mq(laptop) {
+		margin-top: 25px;
+	}
+}
+
+h6 {
+	color: $blue;
+	font-size: 1em;
+	margin: 20px 0;
+	font-weight: 700;
+}
+
+p {
+	font-size: 0.825em;
+}
+
+.link {
+	color: $blue;
+}
+
+.tab-text {
+	margin-top: -15px;
+	width: 100%;
 }

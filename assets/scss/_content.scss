@@ -1,0 +1,26 @@
+// MAIN SECTION
+section {
+	float: left;
+	width: 100%;
+	height: auto;
+	padding: 30px 0;
+	@include box-sizing(border-box);
+	@include mq(laptop) {
+		padding: 40px 0 65px 0;
+	}
+}
+
+// ARTICLE
+article {
+	float: left;
+	width: 100%;
+	padding: 0 10px;
+	@include box-sizing(border-box);
+	@include mq(laptop) {
+		width: 73.5%;
+		height: 100%;
+		padding: 0 20px 0 10px;
+	}
+}
+
+

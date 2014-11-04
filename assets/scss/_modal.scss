@@ -1,0 +1,85 @@
+#overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 999;
+	background: rgba($black, 0.5);
+}
+
+#modal {
+	position: absolute;
+	top: 50%;
+	background: $white;
+	width: 100%;
+	height: 280px;
+	margin-top: -140px;
+	z-index: 9999;
+	display: block;
+	-webkit-box-shadow: 1px 1px 15px 1px $black;
+	box-shadow: 1px 1px 15px 1px $black;
+	padding: 20px 20px;
+	@include box-sizing(border-box);
+	img {
+		float: right;
+		cursor: pointer;
+	}
+	@include mq(android) {
+		left: 50%;
+		margin-left: -224px;
+		margin-top: -136px;
+		width: 448px;
+		height: 272px;
+	}
+	form {
+		float: left;
+		width: 100%;
+		margin-top: -20px;
+		@include mq(android) {
+			margin-top: 0;
+		}
+		label {
+			float: left;
+			height: 30px;
+			width: 100%;
+			text-transform: capitalize;
+			text-align: left;
+			font-weight: 400;
+			@include mq(android) {
+				text-align: center;
+				height: 34px;
+				width: 25%;
+			}
+		}
+		input {
+			float: left;
+			text-indent: 5px;
+			height: 30px;
+			width: 100%;
+			border: 1px solid $blue;
+			@include mq(android) {
+				height: 34px;
+				width: 75%;
+			}
+			&:focus {
+				outline: none;
+				box-shadow: none;
+			}
+		}
+		.break {
+			margin-top: 10px;
+			@include mq(android) {
+				margin-top: 20px;
+			}
+		}
+		button {
+			margin-top: 10px;
+			float: right;
+			width: 140px;
+			@include mq(android) {
+				margin-top: 20px;
+			}
+		}
+	}
+}

@@ -1,0 +1,64 @@
+footer {
+	float: left;
+	width: 100%;
+	height: 160px;
+	background: $grey;
+	padding: 5px 5px;
+	margin: 0 0;
+	@include box-sizing(border-box);
+	@include mq(laptop) {
+		height: 100px;
+	}
+}
+
+
+small#copyright {
+	position: relative;
+	left: 50%;
+	margin-left: -55px;
+	color: $blue;
+	font-size: 1em;
+	margin-top: 12px;
+	@include mq(laptop) {
+		position: static;
+		float: left;
+		margin-left: 0;
+	}
+}
+
+nav.footer {
+	float: none;
+	display: block;
+	width: 100%;
+	@include mq(laptop) {
+		width: auto;
+		float: right;
+	}
+	ul {
+		width: 100%;
+		li {
+			display: inline-block;
+			width: 49%;
+			@include mq(laptop) {
+				width: auto;
+			}
+			a {
+				color: $blue;
+				text-align: center;
+				@include mq(laptop) {
+					text-align: left;
+				}
+				&:hover {
+					color: $blue;
+					background: transparent;
+				}
+			}
+		}
+		@include mq(laptop) {
+			li:nth-child(6) {
+				display: none;
+			}
+		}
+	}
+}
+

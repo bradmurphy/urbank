@@ -7,35 +7,33 @@
 
 // IMPORT BOURBON
 @import "bourbon/bourbon";
-@import "bitters/base";
 @import "neat/neat";
 
 // TABLE OF CONTENTS
 
 // 1. GLOBAL STYLES
 // 2. IMPORTED STYLES
-// 3. TYPOGRAPHY
-// 4. FLASHES
-// 5. LISTS
-// 6. SIMPLIFIED GRID
+// 3. FLASHES
+// 4. LISTS
 
 // GLOBAL STYLES
 body, html {
 	width: 100%;
 	height: 100%;
-	background: $cream;
+	min-height: 480px;
+	background: $white;
+	font-family: 'Lato', sans-serif;
+	font-size: 1rem;
 	margin: 0;
 	padding: 0;
+	z-index: 1;
 }
 
-.content-wrap {
+.wrap {
 	width: 100%;
-	height: auto;
-	@include margin(0 auto);
-	@include pad(0 15px);
-	@include row();
-	@include outer-container;
-	overflow-x: hidden;
+	height: inherit;
+	margin-left: auto;
+	margin-right: auto;
 	@include mq(iphone) {
 		max-width: 320px;
 	}
@@ -48,58 +46,13 @@ body, html {
 	@include mq(laptop) {
 		max-width: 960px;
 	}
-	@include mq(desktop) {
-		max-width: 1280px;
-	}
 }
 
 // IMPORTED STYLES
+@import "header";
+@import "footer";
+@import "content";
 @import "typography";
-
-// FLASHES
-.success {
-	@extend %flash-success;
-}
-
-.error {
-	@extend %flash-error;
-}
-
-.notice {
-	@extend %flash-notice;
-}
-
-.alert {
-	@extend %flash-alert;
-}
-
-// LISTS
-ol.default {
-	@extend %default-ol;
-}
-
-ul.default {
-	@extend %default-ul;
-}
-
-// SIMPLIFIED GRID
-.row { float: left; width: 100%; @include row(); }
-
-.whole { @include span-columns(12); }
-
-.half { @include span-columns(6); }
-
-.third { @include span-columns(4); }
-
-.fourth { @include span-columns(3); }
-
-.sixth { @include span-columns(2); }
-
-.one { @include span-columns(1); }
-
-.grid-example {
-	float: left;
-	height: 100px;
-	background: $muteNavy;
-	margin-bottom: 2.35765%;
-}
+@import "modal";
+@import "article";
+@import "aside";

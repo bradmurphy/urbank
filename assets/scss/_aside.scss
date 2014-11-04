@@ -1,0 +1,108 @@
+// SIDEBAR
+aside {
+	display: none;
+	@include mq(laptop) {
+		float: left;
+		width: 26.5%;
+		height: 100%;
+		display: block;
+		padding: 0 20px;
+		@include box-sizing(border-box);
+	}
+}
+
+// LOGIN BUTTON
+button {
+	width: 100%;
+	padding: 8px 0;
+	font-size: 1.10em;
+	border: none;
+	text-transform: capitalize;
+	background: $purple;
+	color: $white;
+	font-weight: 700;
+	margin-top: 25px;
+	&:focus {
+		outline: none;
+	}
+}
+
+// TABS
+.tabs-wrap {
+	float: left;
+	width: 100%;
+	margin-top: 25px;
+	.tabs {
+		position: relative;
+		float: left;
+		width: 100%;
+		list-style: none;
+		padding: 0 0;
+		margin: 0 0;
+		z-index: 5;
+		li {
+			float: left;
+			width: auto;
+			&.active {
+				background: $beige;
+				padding: 6px 8px;
+				-webkit-box-shadow:inset 1px 1px 0 0 $white;
+				box-shadow:inset 1px 1px 0 0 $white;
+				border-top: solid 1px $darkGrey;
+				border-right: solid 1px $darkGrey;
+				border-left: solid 1px $darkGrey;
+				a {
+					background: transparent;
+					border: none;
+					bottom: 0;
+					color: $black;
+				}
+			}
+			background: $white;
+			a {
+				position: relative;
+				bottom: -11px;
+				background: $green;
+				border-top: solid 1px $darkGrey;
+				border-right: solid 1px $darkGrey;
+				text-align: center;
+				display: block;
+				padding: 6px 12px;
+				text-decoration: none;
+				color: $blue;
+			}
+		}
+	}
+	.tab-group {
+		position: relative;
+		float: left;
+		width: 100%;
+		margin-top: -1px;
+		background: $beige;
+		border: 1px solid $darkGrey;
+		z-index: 2;
+		div {
+			display: none;
+			padding: 0 15px 15px 15px;
+			@include box-sizing(border-box);
+		}
+		#tab2 {
+			padding: 15px;
+		}
+	}
+}
+
+// LIST IN TAB 2
+#tab-list {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 0 10px;
+	li {
+		padding: 5px 0;
+		a {
+			color: $blue;
+			font-weight: 700;
+			text-decoration: none;
+		}
+	}
+}
